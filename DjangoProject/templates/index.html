@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Alt F4 </title>
+</head>
+<body>
+<a href = {% url 'result' %}>CLICK HERE FOR RESULT </a>
+<form action = {% url 'result' %}>
+{#    {% csrf_token %}#}
+        <label>
+            <textarea cols="60" rows="10" name="article"> </textarea>
+        </label>
+        <label>
+            <input type="submit" name="Submit">
+        </label>
+        <br>
+
+</form>
+</body>
+</html>
